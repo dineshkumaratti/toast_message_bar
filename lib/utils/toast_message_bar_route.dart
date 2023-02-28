@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 import '../toast_message_bar.dart';
 
- 
 class ToastMessageBarRoute<T> extends OverlayRoute<T> {
   final ToastMessageBar toastMessageBar;
   final Builder _builder;

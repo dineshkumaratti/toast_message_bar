@@ -13,3 +13,7 @@ Fixed known issues
 ## 0.0.4
 
 Added simple counter app to show the usage of Toast Message
+
+## 0.0.5
+
+Added comments to describe more about the package

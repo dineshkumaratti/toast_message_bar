@@ -13,7 +13,7 @@ typedef ToastMessageBarStatusCallback = void Function(
     ToastMessageBarStatus? status);
 typedef OnTap = void Function(ToastMessageBar toastMessageBar);
 
-// ignore: must_be_immutable
+/// ignore: must_be_immutable
 class ToastMessageBar<T> extends StatefulWidget {
   ToastMessageBar(
       {Key? key,
@@ -65,23 +65,44 @@ class ToastMessageBar<T> extends StatefulWidget {
     onStatusChanged = onStatusChanged ?? (status) {};
   }
 
+  /// Call your toast message
   ToastMessageBarStatusCallback? onStatusChanged;
+
+  ///Add title for your toast message
 
   final String? title;
 
+  ///Add title Size for your toast message
+
   final double? titleSize;
+
+  ///Add title color for your toast message
 
   final Color? titleColor;
 
+  ///Add message for your toast
+
   final String? message;
+
+  ///Add message Size for your toast message
 
   final double? messageSize;
 
+  ///Add message color for your toast message
+
   final Color? messageColor;
+
+  ///Add title which you want to display i.e
+  /// Widget such as Text('Your title') for your message
 
   final Widget? titleText;
 
+  ///Add message which you want to display i.e
+  /// Widget such as Text('Your messageText') for your message
+
   final Widget? messageText;
+
+  ///Add backgroundColor for your toast message
 
   final Color backgroundColor;
 
@@ -152,9 +173,13 @@ class ToastMessageBar<T> extends StatefulWidget {
   final Offset? endOffset;
 
   route.ToastMessageBarRoute<T?>? toastMessageBarRoute;
+
+  /// Initializing the Toast CallBack
   void initState() {
     onStatusChanged = onStatusChanged;
   }
+
+  ///Adding Route for ToastMessage
 
   Future<T?> show(BuildContext context) async {
     toastMessageBarRoute = route.showToastMessageBar<T>(
@@ -166,6 +191,7 @@ class ToastMessageBar<T> extends StatefulWidget {
         .push(toastMessageBarRoute as Route<T>);
   }
 
+  /// Adding Dismiss functionality to close the Toast
   Future<T?> dismiss([T? result]) async {
     if (toastMessageBarRoute == null) {
       return null;
@@ -181,6 +207,7 @@ class ToastMessageBar<T> extends StatefulWidget {
     return null;
   }
 
+  /// Adding boolean values to identify the state of Toast Message
   bool isShowing() {
     if (toastMessageBarRoute == null) {
       return false;

@@ -109,19 +109,25 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await _incrementCounter();
-          // ignore: use_build_context_synchronously
+
+          /// ignore: use_build_context_synchronously
           await ToastMessageBar(
-            //Add background color for your toast message
-            backgroundColor:
-                HexColor('#008B98'), //Add title for your toast message
+            ///Add background color for your toast message
+            backgroundColor: HexColor('#008B98'),
+
+            ///Add title for your toast message
             title: 'Add your custom title here',
-            //Add title color for your toast
+
+            ///Add title color for your toast
             titleColor: Colors.white,
-            //Add message for your toast
+
+            ///Add message for your toast
             message: 'Add your custom message here !!',
-            //Add message color for your toast message
+
+            ///Add message color for your toast message
             messageColor: Colors.white,
-            //Add duration to display the message
+
+            ///Add duration to display the message
             duration: const Duration(seconds: 3),
           ).show(context);
         },

@@ -1,6 +1,6 @@
 name: toast_message_bar
-description: Experience your toast message experience with various pop up messages such as Data Success ,Data Failure, Exceptions with interactive UI design.
-version: 0.0.1
+description: Experience your toast message with various pop up messages such as Data Success ,Data Failure, Exceptions with interactive UI design.
+version: 0.0.3
 homepage: https://github.com/dineshkumaratti/toast_message_bar
 
 environment:

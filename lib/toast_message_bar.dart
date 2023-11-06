@@ -390,7 +390,7 @@ class _ToastMessageBarState<K extends Object?> extends State<ToastMessageBar<K>>
                 return _emptyWidget;
               }
               return ClipRRect(
-                borderRadius: widget.borderRadius,
+                borderRadius: widget.borderRadius!,
                 child: BackdropFilter(
                   filter: ImageFilter.blur(
                       sigmaX: widget.barBlur, sigmaY: widget.barBlur),

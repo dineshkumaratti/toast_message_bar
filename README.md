@@ -1,13 +1,15 @@
  
 ## Usage 
- FlutterToastMessageBar(
-    messageText: const Text('Add your Toast Message Here!!'),
-    messageColor: Colors.amber,
-  );
+
+Add your FlutterToastMessage:
+             FlutterToastMessageBar(
+              messageText: const Text('Add your Toast Message Here!!'),
+              messageColor: Colors.amber,
+            );
 
 ## Additional information
 
- FlutterToastMessageBar(
-    messageText: const Text('Add your Toast Message Here!!'),
-    messageColor: Colors.amber,
-  );
+            FlutterToastMessageBar(
+              messageText: const Text('Add your Toast Message Here!!'),
+              messageColor: Colors.amber,
+            );

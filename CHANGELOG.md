@@ -25,3 +25,7 @@ Fixed known issues
 ## 0.0.7
 
 Fixed known issues
+
+## 0.0.8
+
+Fixed known issues

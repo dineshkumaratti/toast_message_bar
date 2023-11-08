@@ -1,6 +1,6 @@
 name: flutter_toast_message_bar
 description: Experience your toast message with various pop up messages such as Data Success ,Data Failure, Exceptions with interactive UI design.
-version: 0.0.7
+version: 0.0.8
 homepage: https://github.com/dineshkumaratti/toast_message_bar
 
 environment:

@@ -1,11 +1,12 @@
-library toast_message_bar;
+library flutter_toast_message_bar;
 
 import 'dart:async';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:toast_message_bar/utils/toast_message_bar_route.dart' as route;
+import 'package:flutter_toast_message_bar/utils/toast_message_bar_route.dart'
+    as route;
 
 const String toastMessageBarRouteName = '/toastMessageBarRoute';
 
